@@ -1,12 +1,12 @@
 @font-face {
-    font-family: teko;
-    src: url(font/Teko-Regular.ttf);
+    font-family: "teko";
+    src: url(/Pokedex/font/Teko-Regular.ttf);
 }
 *{
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    font-family: teko, cursive;
+    font-family: "teko", calibri;
 }
 body{
     text-align: center;
@@ -18,7 +18,6 @@ main{
     display: inline-block;
     padding: 15px;
     position: relative;
-    background-color: brown;
 }
 .pokedex{
     width: 100%;
@@ -34,12 +33,60 @@ main{
 .pokemon__data{
     position: absolute;
     font-weight: 600;
-    top: 79%;
+    bottom: 17%;
     left: 42%;
     color: rgb(255, 255, 255);
-    font-size: clamp(8px, 5vw, 25px);
+    font-size: clamp(8px, 3vw, 1rem);
+    border-radius: 3%;
+    background-color: rgb(65, 60, 60);
+    border: 2px solid black;
+    width: 30%;
+    height: 6.5%;
+    box-shadow:0px 0px 0px 2px rgb(172, 171, 171);
+    
 }
 .pokemon__name{
-    color: #ced5db;
     text-transform: capitalize;
+}
+.pokemon__number{
+    color: rgb(138, 138, 138);
+}
+.form {
+    position: absolute;
+    width: 40%;
+    top: 84.5%;
+    left: 31%;
+}
+.input__search{
+    width: 100%;
+    padding: 1%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 3vw, 1rem);
+    box-shadow: -2px 2px 0 #888, -4px 5px 0 #333 ;
+}
+.buttons{
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    width: 16%;
+    display: flex;
+    gap: 5px;
+}
+.button{
+    width: 50%;
+    padding: 1%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 3vw, 1rem);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #444;
+
+}
+.button:active{
+box-shadow: inset -4px 4px 0 #222;
 }
